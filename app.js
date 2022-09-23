@@ -23,7 +23,7 @@ startGame()
 playAgain.addEventListener("click", replay); 
 })
 
-//createboard function
+//función crear main
 function createBoard(){ 
 popup.style.display = "none"; 
 for(let i=0;i<100;i++){
@@ -32,11 +32,11 @@ grid.appendChild(div)
 }
 } 
 
-//startgame function
+//empezar el juego
 function startGame(){ 
 let squares =document.querySelectorAll(".grid div") 
 randomApple(squares) 
-//random apple 
+//manzana aleatoria 
 direction =1 
 scoreDisplay.innerHTML=score 
 intervalTime=1000 
@@ -61,7 +61,7 @@ function moveSnake(squares){
 let tail = currentSnake.pop() 
 squares[tail].classList.remove("snake") 
 currentSnake.unshift(currentSnake[0]+direction)  
-// movement ends here  
+// movimiento final 
 eatApple(squares,tail)  
 squares[currentSnake[0]].classList.add("snake")  
 }
@@ -103,13 +103,13 @@ squares[appleIndex].classList.add("apple")
 
 function control(e){ 
 if (e.keycode===39){
-direction = 1 // right 
+direction = 1 
 }else if (e.keycode===38){ 
-direction = -width //if we press the up arrow, the snake will go ten divs up
+direction = -width 
 }else if (e.keycode===37){ 
-direction = -1 // left, the snake will go left one div
+direction = -1 
 }else if (e.keycode===40){
-direction = +width // down the snake head will instantly appear 10 divs below from the current div 
+direction = +width 
 } 
 } 
 
