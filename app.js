@@ -14,7 +14,7 @@ let direction =1
 let score = 0 
 let speed = 0.8 
 let intervalTime =0 
-let interval =0
+let interval =0;
 
 document.addEventListener("DOMContentLoaded",function(){ 
 document.addEventListener("keyup",control) 
