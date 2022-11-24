@@ -13,7 +13,7 @@ let currentSnake=[2,1,0]
 let direction =1 
 let score = 0 
 let speed = 0.8 
-let intervalTime =0; 
+let intervalTime =0; ;
 let interval =0
 
 document.addEventListener("DOMContentLoaded",function(){ 
