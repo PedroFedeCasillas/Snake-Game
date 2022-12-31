@@ -1,2 +1,1 @@
-
-
+Adaptación a celular
