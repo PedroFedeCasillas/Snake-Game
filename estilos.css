@@ -2,6 +2,10 @@
     font-family: 'Share Tech Mono', monospace;
 }  
 
+body{
+      background-color: #1a1a1a;
+}
+
 .texto{
     color:#e6e6e6;
 }
